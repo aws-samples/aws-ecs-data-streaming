@@ -1,0 +1,20 @@
+{"Source":{
+		"minMSKCommit":"10",
+		"MSKpolling":"1.0",
+		"MSKTopic":["topicname"],
+		"SourceDataFormat":"JSON",
+		"asynchronous":false,
+		"configuration" :{"bootstrap.servers": "",
+							"group.id": "foo",
+							"enable.auto.commit": false,
+							"auto.offset.reset": "latest",
+							"batch.num.messages":"100"}
+		},
+		
+"Target":{
+		"TargetS3bucket":"bucketname",
+		"TargetFolderName":"curated/",
+		"TargetDataFormat": "JSON"
+		}
+		
+}
